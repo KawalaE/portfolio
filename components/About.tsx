@@ -46,7 +46,7 @@ const About = () => {
         </span>
         . These experiences motivate me to keep improving, learning new skills
         like video editing and offer valuable opportunities to collaborate with
-        individuals at different levels of experience
+        individuals at different levels of experience.
       </p>
     </motion.section>
   );
