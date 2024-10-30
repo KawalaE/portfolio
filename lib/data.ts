@@ -75,7 +75,7 @@ export const projectsData = [
   {
     title: "Resolute",
     description:
-      "The Fullstack Issue Tracker App that allows users to efficiently manage issues by adding, editing, and organizing them by status and priority. Users can also assign issues to team members, leave comments, and view statistics related to the issues.",
+      "The Fullstack Issue Tracker App that allows users to efficiently manage issues.",
     tags: [
       "React",
       "Next.js",
@@ -90,7 +90,7 @@ export const projectsData = [
   {
     title: "Anime Radar",
     description:
-      "Anime Radar allows anime enthusiasts to explore and discover animes based on genres, order type, and status, while also providing a convenient search bar for quick lookups.",
+      "Anime Radar allows anime enthusiasts to explore and discover animes.",
     tags: [
       "React",
       "TypeScript",
