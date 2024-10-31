@@ -8,7 +8,7 @@ import Project from "./Project";
 const Projects = () => {
   const { ref } = useSectionInView(0.55, "Projects");
   return (
-    <section ref={ref} id="projects" className="scroll-mt-28">
+    <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
       <Heading>Recent Projects</Heading>
       <div>
         {projectsData.map((project, index) => (
