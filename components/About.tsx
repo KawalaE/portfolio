@@ -1,14 +1,28 @@
 "use client";
+import { useActiveSectionContext } from "@/context/active-section";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import Heading from "./Heading";
 
 const About = () => {
+  const { ref, inView } = useInView({ threshold: 0.75 });
+  const { setActiveHeader } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveHeader("About");
+    }
+  }, [inView, setActiveHeader]);
+
   return (
     <motion.section
+      ref={ref}
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40"
+      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-10 scroll-mt-28"
+      id="about"
     >
       <Heading>About me</Heading>
       <p className="mb-3">
@@ -53,3 +67,6 @@ const About = () => {
 };
 
 export default About;
+function setActiveSection(arg0: string) {
+  throw new Error("Function not implemented.");
+}

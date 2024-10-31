@@ -1,4 +1,5 @@
 import Header from "@/components/Header";
+import ActiveSectionContextProvider from "@/context/active-section";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -16,12 +17,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 pt-28 sm:pt-36`}
       >
-        <Header />
-        {children}
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );

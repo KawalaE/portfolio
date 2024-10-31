@@ -1,15 +1,33 @@
 "use client";
+import { useActiveSectionContext } from "@/context/active-section";
 import me from "@/public/me.jpg";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { HiDownload } from "react-icons/hi";
+import { useInView } from "react-intersection-observer";
 
 const Intro = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.75,
+  });
+  const { setActiveHeader } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveHeader("Home");
+    }
+  }, [inView, setActiveHeader]);
+
   return (
-    <section className="flex items-center flex-col justify-center max-w-[50rem] mb-28 sm:mb-0  flex-wrap sm:flex-nowrap tracking-tighter">
+    <section
+      ref={ref}
+      id="home"
+      className="flex  items-center flex-col justify-center max-w-[50rem] mb-28 sm:mb-0  flex-wrap sm:flex-nowrap tracking-tighter scroll-mt-[100rem]"
+    >
       <div className="flex items-center justify-center flex-wrap sm:flex-nowrap ">
         <div className="flex items-center justify-center w-4/5">
           <motion.div
