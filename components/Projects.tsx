@@ -1,23 +1,12 @@
 "use client";
-import { useActiveSectionContext } from "@/context/active-section";
 import { projectsData } from "@/lib/data";
-import React, { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
+import useSectionInView from "@/lib/hook";
+import React from "react";
 import Heading from "./Heading";
 import Project from "./Project";
 
 const Projects = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.55,
-  });
-  const { setActiveHeader } = useActiveSectionContext();
-
-  useEffect(() => {
-    if (inView) {
-      setActiveHeader("Projects");
-    }
-  }, [inView, setActiveHeader]);
-
+  const { ref } = useSectionInView(0.55, "Projects");
   return (
     <section ref={ref} id="projects" className="scroll-mt-28">
       <Heading>Recent Projects</Heading>

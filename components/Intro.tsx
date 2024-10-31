@@ -1,27 +1,15 @@
 "use client";
-import { useActiveSectionContext } from "@/context/active-section";
+import useSectionInView from "@/lib/hook";
 import me from "@/public/me.jpg";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { HiDownload } from "react-icons/hi";
-import { useInView } from "react-intersection-observer";
 
 const Intro = () => {
-  const { ref, inView } = useInView({
-    threshold: 0.75,
-  });
-  const { setActiveHeader } = useActiveSectionContext();
-
-  useEffect(() => {
-    if (inView) {
-      setActiveHeader("Home");
-    }
-  }, [inView, setActiveHeader]);
-
+  const { ref } = useSectionInView(0.75, "Home");
   return (
     <section
       ref={ref}

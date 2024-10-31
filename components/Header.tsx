@@ -6,7 +6,8 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 
 const Header = () => {
-  const { activeHeader, setActiveHeader } = useActiveSectionContext();
+  const { activeHeader, setActiveHeader, setTimeOfLastClick } =
+    useActiveSectionContext();
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -35,7 +36,10 @@ const Header = () => {
                   "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition",
                   { "text-gray-950": activeHeader === link.name }
                 )}
-                onClick={() => setActiveHeader(link.name)}
+                onClick={() => {
+                  setActiveHeader(link.name);
+                  setTimeOfLastClick(Date.now());
+                }}
                 href={link.hash}
               >
                 {link.name}
