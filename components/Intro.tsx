@@ -1,4 +1,5 @@
 "use client";
+import { useActiveSectionContext } from "@/context/active-section";
 import useSectionInView from "@/lib/hook";
 import me from "@/public/me.jpg";
 import { motion } from "framer-motion";
@@ -10,6 +11,7 @@ import { HiDownload } from "react-icons/hi";
 
 const Intro = () => {
   const { ref } = useSectionInView(0.75, "Home");
+  const { setActiveHeader, setTimeOfLastClick } = useActiveSectionContext();
   return (
     <section
       ref={ref}
@@ -64,6 +66,10 @@ const Intro = () => {
                 className="bg-gray-900 group text-white px-5 py-2 rounded-full flex justify-center items-center gap-2 outline-none
                 hover:scale-110 hover:bg-gray-950 active:scale-105 transition-all"
                 href="#contact"
+                onClick={() => {
+                  setActiveHeader("Contact");
+                  setTimeOfLastClick(Date.now());
+                }}
               >
                 Contact me here{" "}
                 <FaArrowRightLong
@@ -75,7 +81,7 @@ const Intro = () => {
                 href="/CV.pdf"
                 download
                 className="bg-white px-5 py-2 group flex items-center sm:w-auto gap-2 rounded-full outline-none
-                hover:scale-[1.15] active:scale-[1.15] transition-all cursor-pointer border border-black/10"
+                hover:scale-[1.15] active:scale-[1.15] transition-all cursor-pointer borderBlack"
               >
                 Download CV{" "}
                 <HiDownload
@@ -88,14 +94,14 @@ const Intro = () => {
               <a
                 href="https://www.linkedin.com/in/edyta-kawala/"
                 target="_blank"
-                className="bg-white px-3 py-3 flex items-center gap-2 rounded-full hover:scale-[1.15]  active:scale-105 transition-all cursor-pointer border border-black/10"
+                className="bg-white px-3 py-3 flex items-center gap-2 rounded-full hover:scale-[1.15]  active:scale-105 transition-all cursor-pointer borderBlack"
               >
                 <FaLinkedin className="opacity-70" size={20} />
               </a>
               <a
                 href="https://github.com/KawalaE"
                 target="_blank"
-                className="bg-white px-3 py-3 flex items-center gap-2 rounded-full hover:scale-[1.15] active:scale-105 transition-all cursor-pointer border border-black/10"
+                className="bg-white px-3 py-3 flex items-center gap-2 rounded-full hover:scale-[1.15] active:scale-105 transition-all cursor-pointer borderBlack"
               >
                 <FaGithub className="opacity-70 " size={20} />
               </a>
