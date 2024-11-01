@@ -1,4 +1,5 @@
 "use client";
+import { sendEmail } from "@/actions/sendEmail";
 import useSectionInView from "@/lib/hook";
 import { motion } from "framer-motion";
 import { FiSend } from "react-icons/fi";
@@ -6,6 +7,7 @@ import Heading from "./Heading";
 
 const Contact = () => {
   const { ref } = useSectionInView(0.5, "Contact");
+
   return (
     <motion.section
       id="contact"
@@ -30,15 +32,24 @@ const Contact = () => {
         </a>{" "}
         or trough this form.
       </p>
-      <form className="mt-10 flex flex-col ">
+      <form
+        className="mt-10 flex flex-col"
+        action={async (formData) => await sendEmail(formData)}
+      >
         <input
           className="h-14 rounded-lg borderBlack px-4"
           type="email"
+          name="senderEmail"
+          required
+          maxLength={500}
           placeholder="Your email"
         />
         <textarea
           className="h-52 my-3 rounded-lg borderBlack px-4 py-4 "
           placeholder="Your message"
+          name="message"
+          required
+          maxLength={5000}
         ></textarea>
         <button
           type="submit"
