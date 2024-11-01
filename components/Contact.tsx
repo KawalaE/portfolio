@@ -2,8 +2,10 @@
 import { sendEmail } from "@/actions/sendEmail";
 import useSectionInView from "@/lib/hook";
 import { motion } from "framer-motion";
-import { FiSend } from "react-icons/fi";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import Heading from "./Heading";
+import SubmitBtn from "./SubmitBtn";
 
 const Contact = () => {
   const { ref } = useSectionInView(0.5, "Contact");
@@ -34,7 +36,13 @@ const Contact = () => {
       </p>
       <form
         className="mt-10 flex flex-col"
-        action={async (formData) => await sendEmail(formData)}
+        action={async (formData) => {
+          const { data, error } = await sendEmail(formData);
+          console.log(data);
+          if (data?.data !== null) {
+            toast.success("Email was sent!");
+          } else if (data.error || error) toast.error("Something went wrong");
+        }}
       >
         <input
           className="h-14 rounded-lg borderBlack px-4"
@@ -51,14 +59,9 @@ const Contact = () => {
           required
           maxLength={5000}
         ></textarea>
-        <button
-          type="submit"
-          className="flex items-center group justify-center gap-2 h-[2.5rem] w-[6.5rem] bg-gray-900 text-white rounded-full outline-none transition-all hover:scale-[1.15] active:scale-[1.15]  cursor-pointer borderBlack"
-        >
-          Send{" "}
-          <FiSend className="opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1 " />
-        </button>
+        <SubmitBtn />
       </form>
+      <ToastContainer />
     </motion.section>
   );
 };
