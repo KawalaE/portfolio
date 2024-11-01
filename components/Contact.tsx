@@ -38,7 +38,6 @@ const Contact = () => {
         className="mt-10 flex flex-col"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
-          console.log(data);
           if (data?.data !== null) {
             toast.success("Email was sent!");
           } else if (data.error || error) toast.error("Something went wrong");
@@ -48,8 +47,8 @@ const Contact = () => {
           className="h-14 rounded-lg borderBlack px-4"
           type="email"
           name="senderEmail"
-          required
           maxLength={500}
+          required
           placeholder="Your email"
         />
         <textarea
@@ -59,6 +58,7 @@ const Contact = () => {
           required
           maxLength={5000}
         ></textarea>
+
         <SubmitBtn />
       </form>
       <ToastContainer />
