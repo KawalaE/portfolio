@@ -57,6 +57,3 @@ const About = () => {
 };
 
 export default About;
-function setActiveSection(arg0: string) {
-  throw new Error("Function not implemented.");
-}
