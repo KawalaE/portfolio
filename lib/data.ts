@@ -1,7 +1,29 @@
 import animeRadar from "@/public/anime-radar.png";
 import battleship from "@/public/battleship.png";
+import chakraUI from "@/public/chakraui.png";
+import cssIcon from "@/public/css-3.png";
+import gitIcon from "@/public/git.png";
+import htmlIcon from "@/public/html-5.png";
+import jestIcon from "@/public/jest.png";
+import jsIcon from "@/public/js.png";
+import nextIcon from "@/public/nextjs-icon.png";
+import npmIcon from "@/public/npm.png";
+import prismaIcon from "@/public/prisma.png";
+import radixIcon from "@/public/radix.png";
+import reactHookForm from "@/public/react-hook-form.png";
+import reactQueryIcon from "@/public/react-query.png";
+import reactIcon from "@/public/react.png";
 import resolute from "@/public/resolute.png";
+import tailwindIcon from "@/public/tailwind.png";
+import tsIcon from "@/public/ts.png";
+import vercelIcon from "@/public/vercel.png";
+import vitestIcon from "@/public/vitest.png";
+import webpackIcon from "@/public/webpack-icon.png";
+import zodIcon from "@/public/zod.png";
+import zustandIcon from "@/public/zustand.png";
+
 import React from "react";
+
 import { LiaHandsHelpingSolid } from "react-icons/lia";
 import { PiShoppingCartSimpleBold } from "react-icons/pi";
 
@@ -95,49 +117,48 @@ export const projectsData = [
       "Prisma",
       "Vitest",
     ],
+    siteUrl: "https://resolute-topaz.vercel.app/",
+    repoUrl: "https://github.com/KawalaE/Resolute",
     imageUrl: resolute,
   },
   {
     title: "Anime Radar",
     description:
       "Anime Radar allows anime enthusiasts to explore and discover animes.",
-    tags: [
-      "React",
-      "TypeScript",
-      "Chakra UI",
-      "Zustand",
-      "React Router",
-      "React Query",
-    ],
+    siteUrl: "https://anime-radar.vercel.app/",
+    repoUrl: "https://github.com/KawalaE/anime-radar",
     imageUrl: animeRadar,
   },
   {
     title: "Battleship",
     description:
       "My rendition of a classic Battleship game built with vanilla JavaScript, HTML and CSS.",
-    tags: ["JavaScript", "HTML", "CSS", "Jest", "Webpack", "ESLint"],
+    siteUrl: "https://kawalae.github.io/Battleship/",
+    repoUrl: "https://github.com/KawalaE/Battleship",
     imageUrl: battleship,
   },
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "Chakra UI",
-  "Radix UI",
-  "Zod",
-  "Zustand",
-  "Vitest",
-  "Jest",
-  "React Hook Form",
-  "React Router",
-  "React Query",
-  "English",
+  { name: "React", img: reactIcon },
+  { name: "Next.js", img: nextIcon },
+  { name: "HTML", img: htmlIcon },
+  { name: "CSS", img: cssIcon },
+  { name: "JavaScript", img: jsIcon },
+  { name: "TypeScript", img: tsIcon },
+  { name: "Git", img: gitIcon },
+  { name: "Npm", img: npmIcon },
+  { name: "Vercel", img: vercelIcon },
+  { name: "Tailwind", img: tailwindIcon },
+  { name: "Prisma", img: prismaIcon },
+  { name: "Jest", img: jestIcon },
+  { name: "Webpack", img: webpackIcon },
+  { name: "Vitest", img: vitestIcon },
+  { name: "Chakra UI", img: chakraUI },
+  { name: "Radix UI", img: radixIcon },
+  { name: "Zod", img: zodIcon },
+  { name: "React Query", img: reactQueryIcon },
+  { name: "React Router", img: null },
+  { name: "Zustand", img: zustandIcon },
+  { name: "React Hook Form", img: reactHookForm },
 ] as const;

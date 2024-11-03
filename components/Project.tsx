@@ -3,9 +3,17 @@ import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import { useRef } from "react";
+import { FaGithub } from "react-icons/fa";
+
 type ProjectProps = (typeof projectsData)[number];
 
-const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
+const Project = ({
+  title,
+  description,
+  siteUrl,
+  repoUrl,
+  imageUrl,
+}: ProjectProps) => {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -27,16 +35,24 @@ const Project = ({ title, description, tags, imageUrl }: ProjectProps) => {
           {" "}
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
-          <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
-            {tags.map((tag, index) => (
-              <li
-                key={index}
-                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] text-white uppercase tracking-wider rounded-full"
-              >
-                {tag}
-              </li>
-            ))}
-          </ul>
+          <div className="flex  gap-3 mt-2 flex-wrap">
+            <a
+              href={siteUrl}
+              target="_blank"
+              className="bg-gray-500  text-white px-5 py-2 rounded-full gap-2 outline-none
+                hover:scale-110 hover:bg-gray-700 active:scale-105 transition-all"
+            >
+              View site!
+            </a>
+            <a
+              href={repoUrl}
+              target="_blank"
+              className="bg-gray-500 flex items-center text-white px-5 py-2 rounded-full gap-2 outline-none
+                hover:scale-110 hover:bg-gray-700 active:scale-105 transition-all cursor-pointer"
+            >
+              Go to repo <FaGithub />
+            </a>
+          </div>
         </div>
 
         <Image

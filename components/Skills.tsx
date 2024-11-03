@@ -2,6 +2,7 @@
 import { skillsData } from "@/lib/data";
 import useSectionInView from "@/lib/hook";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Heading from "./Heading";
 
 const fadeInAnimationVariants = {
@@ -42,7 +43,18 @@ const Skills = () => {
             custom={index}
           >
             {" "}
-            {skill}
+            <div className="flex gap-2 items-center">
+              {skill.img !== null && (
+                <Image
+                  src={skill.img}
+                  alt={"Skill icon"}
+                  quality={95}
+                  width={32}
+                ></Image>
+              )}
+
+              {skill.name}
+            </div>
           </motion.li>
         ))}
       </ul>
