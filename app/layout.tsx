@@ -7,7 +7,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Edyta | Fronted Developer",
+  title: "Edyta | Frontend Developer",
   description:
     "I am a fronted developer with experience in React, Next.js and JS",
 };

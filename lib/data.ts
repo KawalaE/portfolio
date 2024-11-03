@@ -2,12 +2,15 @@ import animeRadar from "@/public/anime-radar.png";
 import battleship from "@/public/battleship.png";
 import chakraUI from "@/public/chakraui.png";
 import cssIcon from "@/public/css-3.png";
+import eslintIcon from "@/public/eslint.svg";
 import gitIcon from "@/public/git.png";
 import htmlIcon from "@/public/html-5.png";
 import jestIcon from "@/public/jest.png";
 import jsIcon from "@/public/js.png";
+import mswIcon from "@/public/msw-logo.svg";
 import nextIcon from "@/public/nextjs-icon.png";
 import npmIcon from "@/public/npm.png";
+import prettierIcon from "@/public/prettier.svg";
 import prismaIcon from "@/public/prisma.png";
 import radixIcon from "@/public/radix.png";
 import reactHookForm from "@/public/react-hook-form.png";
@@ -161,4 +164,7 @@ export const skillsData = [
   { name: "React Router", img: null },
   { name: "Zustand", img: zustandIcon },
   { name: "React Hook Form", img: reactHookForm },
+  { name: "Mock Service Worker", img: mswIcon },
+  { name: "Prettier", img: prettierIcon },
+  { name: "ESLint", img: eslintIcon },
 ] as const;
