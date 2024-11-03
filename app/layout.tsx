@@ -19,6 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="!scroll-smooth">
+      <head>
+        <link rel="icon" href="/e_fav.png" type="image/png" />
+      </head>
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 pt-28 sm:pt-36`}
       >

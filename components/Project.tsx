@@ -65,7 +65,7 @@ const Project = ({
           alt={`Project ${title}`}
           quality={95}
           className="sm:absolute top-12 
-
+          mb-4 
         -right-40 w-[28.25rem] 
         shadow-2xl rounded-lg
         group-even:right-[initial]
