@@ -29,10 +29,13 @@ const Experience = () => {
                 borderRight: "0.4rem solid #9ca3af",
               }}
               date={item.date}
-              icon={item.icon}
+              icon={<img src={item.icon} alt="myLogo" />}
               iconStyle={{
                 background: "white",
-                fontSize: "1.5rem",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                padding: "0.3rem",
               }}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>

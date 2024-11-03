@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Heading from "./Heading";
 
 const About = () => {
-  const { ref } = useSectionInView(0.95, "About");
+  const { ref } = useSectionInView(0.55, "About");
   return (
     <motion.section
       ref={ref}
@@ -25,10 +25,9 @@ const About = () => {
         <span className="font-medium">
           I co-founded an e-commerce company - Dotigo
         </span>
-        . During this time, I rediscovered my passion for coding specifically on
-        the frontend side, which was a completely different experience from the
-        technologies I was introduced to at university. I&apos;ve been honing my
-        skills through online courses and tutorials on platforms like{" "}
+        . During this time I have rediscovered my passion for coding
+        specifically on the frontend side. I&apos;ve been honing my skills
+        through online courses and tutorials on platforms like{" "}
         <span className="font-medium">Udemy</span> and YouTube channels such as{" "}
         <span className="font-medium">Traversy Media</span>,{" "}
         <span className="font-medium">FireShip</span> and{" "}
