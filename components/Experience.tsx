@@ -39,12 +39,14 @@ const Experience = () => {
               }}
             >
               <h3 className="font-semibold capitalize">{item.title}</h3>
-              <div className="flex gap-2 items-center">
-                <p className="font-normal mt-0">{item.location}</p>
-                <p className="font-normal mt-0">{item.company}</p>
+              <div className="flex gap-2 items-center text-gray-600 mb-3">
+                <p className="mt-0 font-semibold  text-gray-700">
+                  {item.company}
+                </p>
+                <p className="font-normal mt-0 font">{item.location}</p>
               </div>
 
-              <p className="!font-normal !mt-1 text-gray-700">
+              <p className="!font-normal !mt-1 text-gray-700 text-justify tracking-tighter">
                 {item.description}
               </p>
             </VerticalTimelineElement>

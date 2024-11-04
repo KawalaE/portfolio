@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Heading from "./Heading";
 
 const About = () => {
-  const { ref } = useSectionInView(0.55, "About");
+  const { ref } = useSectionInView(0.85, "About");
   return (
     <motion.section
       ref={ref}

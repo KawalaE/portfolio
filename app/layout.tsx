@@ -25,6 +25,9 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-gray-50 text-gray-950 pt-28 sm:pt-36`}
       >
+        <div className="bg-[#bcfdfd] fixed top-[-6rem] left-[50%] h-[31.25rem] w-[45rem] rounded-full -z-10 blur-[12rem] -translate-x-[30rem]" />
+        <div className="bg-[#f3d0fc] fixed top-[-6rem] left-[50%] h-[31.25rem] w-[45rem] rounded-full -z-10 blur-[12rem]  -translate-x-[10rem]" />
+
         <ActiveSectionContextProvider>
           <Header />
           {children}
