@@ -35,11 +35,10 @@ const Skills = () => {
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
-            animate="animate"
             whileInView="animate"
-            // viewport={{
-            //   once: true,
-            // }}
+            viewport={{
+              once: true,
+            }}
             custom={index}
           >
             {" "}
