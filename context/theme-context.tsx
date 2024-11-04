@@ -16,6 +16,7 @@ type ThemeContextProviderProps = {
 
 const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
   const [theme, setTheme] = useState<Theme>("light");
+
   const themeHandler = () => {
     if (theme === "light") {
       setTheme("dark");
@@ -43,6 +44,8 @@ const ThemeContextProvider = ({ children }: ThemeContextProviderProps) => {
       }
     } else if (window.matchMedia("(prefers-color-scheme:dark)").matches) {
       setTheme("dark");
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
     }
   }, []);
   return (
