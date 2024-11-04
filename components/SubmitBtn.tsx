@@ -11,7 +11,7 @@ const SubmitBtn = () => {
           w-[6.5rem] bg-gray-900 text-white 
           rounded-full outline-none transition-all 
           hover:scale-[1.15] active:scale-[1.15]  
-          cursor-pointer borderBlack disabled:scale-100 disabled:bg-opacity-65"
+          cursor-pointer borderBlack disabled:scale-100 disabled:bg-opacity-65 dark:bg-white dark:bg-opacity-10"
       disabled={pending}
     >
       {" "}

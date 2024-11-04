@@ -66,7 +66,7 @@ export const experiencesData = [
     title: "E-commerce and Development Strategy Specialist / Co-founder",
     location: "Kraków",
     company: "Dotigo",
-    description: `As a co-founder in a startup environment, I was responsible for integrating our inventory system (BaseLinker) with platforms like Allegro, Shopee, and Erli. My role included creating detailed product listings from technical documentation, providing technical support for customers, developing our shop website using PrestaShop, and automating key tasks with Python scripts to streamline operations and minimize manual work.`,
+    description: `As a co-founder in a startup environment, I am responsible for integrating our inventory system (BaseLinker) with platforms like Allegro, Shopee, and Erli. My role includes creating detailed product listings from technical documentation, providing technical support for customers, developing our shop website using PrestaShop, and automating key tasks with Python scripts to streamline operations and minimize manual work.`,
     icon: "/dotigo.webp",
     date: "2022 - now",
   },

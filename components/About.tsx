@@ -35,7 +35,8 @@ const About = () => {
       </p>
       <p>
         I also draw a lot of inspiration from the people I meet at events like
-        <span className="font-medium"> meetJS</span> and through my recent
+        <span className="font-medium"> meetJS</span>,{" "}
+        <span className="font-medium">HackYeah</span> and through my recent
         <span className="font-medium">
           {" "}
           volunteering for{" "}

@@ -35,7 +35,7 @@ const Intro = () => {
               width="192"
               quality="95"
               priority={true}
-              className="rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="rounded-full object-cover border-[0.35rem] border-white   shadow-xl"
             ></Image>
           </motion.div>
         </div>
@@ -78,9 +78,9 @@ const Intro = () => {
                 />
               </Link>
               <a
-                href="/CV.pdf"
+                href="/edyta-kawala-cv.pdf"
                 download
-                className="bg-white px-5 py-2 group flex items-center sm:w-auto gap-2 rounded-full outline-none
+                className="bg-white dark:bg-white/10 px-5 py-2 group flex items-center sm:w-auto gap-2 rounded-full outline-none
                 hover:scale-[1.15] active:scale-[1.15] transition-all cursor-pointer borderBlack"
               >
                 Download CV{" "}
@@ -94,14 +94,14 @@ const Intro = () => {
               <a
                 href="https://www.linkedin.com/in/edyta-kawala/"
                 target="_blank"
-                className="bg-white px-3 py-3 flex items-center gap-2 rounded-full hover:scale-[1.15]  active:scale-105 transition-all cursor-pointer borderBlack"
+                className="bg-white  dark:bg-white/10  px-3 py-3 flex items-center gap-2 rounded-full hover:scale-[1.15]  active:scale-105 transition-all cursor-pointer borderBlack"
               >
                 <FaLinkedin className="opacity-70" size={20} />
               </a>
               <a
                 href="https://github.com/KawalaE"
                 target="_blank"
-                className="bg-white px-3 py-3 flex items-center gap-2 rounded-full hover:scale-[1.15] active:scale-105 transition-all cursor-pointer borderBlack"
+                className="bg-white  dark:bg-white/10 px-3 py-3 flex items-center gap-2 rounded-full hover:scale-[1.15] active:scale-105 transition-all cursor-pointer borderBlack"
               >
                 <FaGithub className="opacity-70 " size={20} />
               </a>

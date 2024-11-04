@@ -32,11 +32,13 @@ const Project = ({
       }}
       className="mb-3 sm:mb-8 last:mb-0 group flex flex-col"
     >
-      <section className=" bg-gray-100 border flex flex-col sm:flex-row  border-black/5 overflow-hidden  items-center sm:pr-8 sm:relative sm:h-[18rem] max-w-[42rem]  hover:bg-gray-200 transition">
+      <section className=" bg-gray-100 dark:bg-white/10  dark:hover:bg-white/20  border flex flex-col sm:flex-row  border-black/5 overflow-hidden  items-center sm:pr-8 sm:relative sm:h-[18rem] max-w-[42rem]  hover:bg-gray-200 transition">
         <div className="pt-4  pb-7 px-5 rounded-lg sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[20rem] ">
           {" "}
           <h3 className="text-2xl font-semibold">{title}</h3>
-          <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
+          <p className="mt-2 leading-relaxed text-gray-700 dark:text-gray-200">
+            {description}
+          </p>
           <div className="flex gap-3 mt-2 flex-wrap">
             <a
               href={siteUrl}
