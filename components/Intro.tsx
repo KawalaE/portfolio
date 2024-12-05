@@ -78,7 +78,7 @@ const Intro = () => {
                 />
               </Link>
               <a
-                href="/Edyta-Kawala-CV.pdf"
+                href="/Edyta Kawala CV.pdf"
                 download
                 className="bg-white dark:bg-white/10 px-5 py-2 group flex items-center sm:w-auto gap-2 rounded-full outline-none
                 hover:scale-[1.15] active:scale-[1.15] transition-all cursor-pointer borderBlack"
