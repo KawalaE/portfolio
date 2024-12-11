@@ -55,10 +55,10 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Volunteer at FutureConf",
+    title: "Staff of FutureConf",
     location: "Kraków",
     company: "Future Conf",
-    description: `I am responsible for creating promotional content, including ads, memes, social media posts, and short films to increase event visibility and engagement. I also develop creative media around key topics such as web development, quantum computing, and AI. I constantly collaborate with a diverse team, which allows me to gain experience in digital marketing, event promotion, and a broad spectrum of technical topics.`,
+    description: `I created promotional content, including ads, memes, social media posts, and short films, to boost event visibility. As a frontend developer, I built a web application used in an advertising video. I collaborated closely with the design team, using Canva for creative projects, and produced engaging promotional materials, gaining experience in digital marketing, event promotion, and technical topics.`,
     icon: "/future.png",
     date: "2024",
   },
