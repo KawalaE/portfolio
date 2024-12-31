@@ -55,6 +55,15 @@ export const links = [
 
 export const experiencesData = [
   {
+    title: "Front-end Developer",
+    loaction: "Kraków",
+    company: "Futurum Technology Ltd.",
+    description:
+      "Currently, I work as a Frontend Developer specializing in Angular, where I implement UI/UX changes based on client requirements, collaborating with an international team to ensure seamless and effective solutions.",
+    icon: "/futurum.png",
+    date: "2024",
+  },
+  {
     title: "Staff of FutureConf",
     location: "Kraków",
     company: "Future Conf",
