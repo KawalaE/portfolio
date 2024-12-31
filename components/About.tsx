@@ -34,6 +34,13 @@ const About = () => {
         <span className="font-medium">ColorCode</span>.
       </p>
       <p>
+        Currently,{" "}
+        <span className="font-medium">I work as a Frontend Developer</span>{" "}
+        specializing in <span className="font-medium">Angular</span>, where I
+        implement UI/UX changes based on client requirements, collaborating with
+        an international team to ensure seamless and effective solutions.
+      </p>
+      <p>
         I also draw a lot of inspiration from the people I meet at events like
         <span className="font-medium"> meetJS</span>,{" "}
         <span className="font-medium">HackYeah</span> and through my recent
