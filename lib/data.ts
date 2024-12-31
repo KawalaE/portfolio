@@ -1,9 +1,9 @@
+import angularIcon from "@/public/angular.svg";
 import animeRadar from "@/public/anime-radar.png";
 import battleship from "@/public/battleship.png";
 import chakraUI from "@/public/chakraui.png";
 import cssIcon from "@/public/css-3.png";
 import eslintIcon from "@/public/eslint.svg";
-
 import gitIcon from "@/public/git.png";
 import htmlIcon from "@/public/html-5.png";
 import jestIcon from "@/public/jest.png";
@@ -136,6 +136,7 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  { name: "Angular", img: angularIcon },
   { name: "React", img: reactIcon },
   { name: "Next.js", img: nextIcon },
   { name: "HTML", img: htmlIcon },
