@@ -1,7 +1,7 @@
 "use client";
 import { useActiveSectionContext } from "@/context/active-section";
 import useSectionInView from "@/lib/hook";
-import me from "@/public/me.jpg";
+import me from "@/public/me.jpeg";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
@@ -43,14 +43,15 @@ const Intro = () => {
           <motion.p
             initial={{ opacity: 0, y: 100 }}
             animate={{ opacity: 1, y: 0 }}
-            className="mt-4 px-4 text-xl font-medium leading-[1.5] sm:text-2xl text-justify"
+            className="mt-4 px-4 text-xl font-medium leading-[1.5] sm:text-2xl "
           >
             <span className="font-bold">Hi, I&apos;m Edyta! </span>
             <br />
             <span>
-              I&apos;m a <b>frontend developer</b> with two years of coding
-              experience in JavaScript. I enjoy learning new technologies and
-              enhancing my skills. My focus is <u>React and Next.js</u>.
+              I&apos;m a <b>frontend developer</b>. I enjoy learning new
+              technologies and enhancing my skills. <br />I have experience with{" "}
+              <u>React</u> and <u>Next.js</u>, along with professional
+              experience working with <u>Angular</u>.
             </span>
           </motion.p>
           <motion.div
