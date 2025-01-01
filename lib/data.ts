@@ -61,7 +61,7 @@ export const experiencesData = [
     description:
       "Currently, I work as a Frontend Developer specializing in Angular, where I implement UI/UX changes based on client requirements, collaborating with an international team to ensure seamless and effective solutions.",
     icon: "/futurum.png",
-    date: "2024",
+    date: "2024 - now",
   },
   {
     title: "Staff of FutureConf",
@@ -77,7 +77,7 @@ export const experiencesData = [
     company: "Dotigo",
     description: `As a co-founder in a startup environment, I am responsible for integrating our inventory system (BaseLinker) with platforms like Allegro, Shopee, and Erli. My role includes creating detailed product listings from technical documentation, providing technical support for customers, developing our shop website using PrestaShop, and automating key tasks with Python scripts to streamline operations and minimize manual work.`,
     icon: "/dotigo.webp",
-    date: "2022 - now",
+    date: "2022 - 2024",
   },
   {
     title: "Senior Information Technology Analyst",
