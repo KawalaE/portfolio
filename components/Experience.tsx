@@ -54,7 +54,7 @@ const Experience = () => {
                 <p className="font-normal mt-0 font">{item.location}</p>
               </div>
 
-              <p className="!font-normal !mt-1 dark:text-white/75 text-gray-700 text-justify tracking-tighter">
+              <p className="!font-normal !mt-1 dark:text-white/75 text-gray-700  tracking-tighter">
                 {item.description}
               </p>
             </VerticalTimelineElement>

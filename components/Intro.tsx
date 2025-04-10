@@ -48,10 +48,8 @@ const Intro = () => {
             <span className="font-bold">Hi, I&apos;m Edyta! </span>
             <br />
             <span>
-              I&apos;m a <b>frontend developer</b>. I enjoy learning new
-              technologies and enhancing my skills. <br />I have experience with{" "}
-              <u>React</u> and <u>Next.js</u>, along with professional
-              experience working with <u>Angular</u>.
+              I&apos;m a passionate frontend developer with commercial
+              experience working with <u>Angular</u> on the med-tech projects.
             </span>
           </motion.p>
           <motion.div

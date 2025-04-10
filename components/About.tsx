@@ -37,16 +37,16 @@ const About = () => {
         Currently,{" "}
         <span className="font-medium">I work as a Frontend Developer</span>{" "}
         specializing in <span className="font-medium">Angular</span>, where I
-        implement UI/UX changes based on client requirements, collaborating with
-        an international team to ensure seamless and effective solutions.
+        contribute to the development and maintenance of a commercial med-tech
+        healthcare services applications for healthcare professionals.
       </p>
       <p>
         I also draw a lot of inspiration from the people I meet at events like
         <span className="font-medium"> meetJS</span>,{" "}
-        <span className="font-medium">HackYeah</span> and through my recent
+        <span className="font-medium">HackYeah</span> and proud staff member of
+        recent
         <span className="font-medium">
           {" "}
-          volunteering for{" "}
           <a
             href="https://www.futureconf.tech/"
             target="_blank"
@@ -55,9 +55,9 @@ const About = () => {
             FutureConf
           </a>
         </span>
-        . These experiences motivate me to keep improving, learning new skills
-        like video editing and offer valuable opportunities to collaborate with
-        individuals at different levels of experience.
+        . I thrive when there is a challenge — whether it's deepening my
+        frontend skills, figuring out a new bassline, or keeping my ever-growing
+        plant collection alive.
       </p>
     </motion.section>
   );

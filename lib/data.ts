@@ -18,6 +18,7 @@ import reactHookForm from "@/public/react-hook-form.png";
 import reactQueryIcon from "@/public/react-query.png";
 import reactIcon from "@/public/react.png";
 import resolute from "@/public/resolute.png";
+import rxjsIcon from "@/public/rxjs-1.svg";
 import tailwindIcon from "@/public/tailwind.png";
 import tsIcon from "@/public/ts.png";
 import vercelIcon from "@/public/vercel.png";
@@ -59,7 +60,7 @@ export const experiencesData = [
     location: "Kraków",
     company: "Futurum Technology Ltd.",
     description:
-      "Currently, I work as a Frontend Developer specializing in Angular, where I implement UI/UX changes based on client requirements, collaborating with an international team to ensure seamless and effective solutions.",
+      "Currently, I work as a Frontend Developer contributing to the development and maintenance of commercial med-tech healthcare services applications for healthcare professionals. I serve as the sole frontend developer on a project, making key decisions, owning tasks, and managing a legacy codebase with substantial technical debt. I actively participate in regular standups and sync-ups with cross-functional teams, collaborating with backend developers to ensure seamless feature delivery and integration. I also navigate multiple projects simultaneously, balancing priorities while ensuring timely delivery and maintaining high code quality.",
     icon: "/futurum.png",
     date: "2024 - now",
   },
@@ -146,6 +147,7 @@ export const projectsData = [
 
 export const skillsData = [
   { name: "Angular", img: angularIcon },
+  { name: "RxJS", img: rxjsIcon },
   { name: "React", img: reactIcon },
   { name: "Next.js", img: nextIcon },
   { name: "HTML", img: htmlIcon },
