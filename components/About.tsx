@@ -45,7 +45,7 @@ const About = () => {
             FutureConf
           </a>
         </span>
-        . I thrive when there is a challenge — whether it's deepening my
+        . I thrive when there is a challenge — whether it&apos;s deepening my
         frontend skills, figuring out a new bassline, or keeping my ever-growing
         plant collection alive.
       </p>
