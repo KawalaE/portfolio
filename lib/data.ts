@@ -68,7 +68,7 @@ export const experiencesData = [
     title: "Staff of FutureConf",
     location: "Kraków",
     company: "Future Conf",
-    description: `I created promotional content, including ads, memes, social media posts, and short films, to boost event visibility. As a frontend developer, I built a web application used in an advertising video. I collaborated closely with the design team, using Canva for creative projects, and produced engaging promotional materials, gaining experience in digital marketing, event promotion, and technical topics.`,
+    description: `I created promotional content, including ads, memes, social media posts, and short films, to boost event visibility. As a frontend developer, I built a web application used in an advertising video. I collaborated closely with the design team, using Canva for creative projects and produced engaging promotional materials, gaining experience in digital marketing, event promotion, and technical topics.`,
     icon: "/future.png",
     date: "2024",
   },

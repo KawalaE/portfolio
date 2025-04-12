@@ -17,24 +17,24 @@ const About = () => {
       <Heading>About me</Heading>
       <p className="mb-3">
         {" "}
-        I'm a Frontend Developer with a background in Automatic Control and
+        I&apos;m a Frontend Developer with a background in Automatic Control and
         Robotics, where I was first introduced to programming. After earning my
         BEng, I co-founded an e-commerce company. Around that time, I also
         rediscovered my passion for coding and began developing my skills
         further through online courses and tutorials.{" "}
       </p>
       <p>
-        Currently,{" "}
+        Currently{" "}
         <span className="font-medium">I work as a Frontend Developer</span>{" "}
         specializing in <span className="font-medium">Angular</span>, where I
-        contribute to the development and maintenance of a commercial med-tech
-        healthcare services applications for healthcare professionals.
+        contribute to the development and maintenance of commercial med-tech
+        services applications for healthcare professionals.
       </p>
       <p>
         I also draw a lot of inspiration from the people I meet at events like
         <span className="font-medium"> meetJS</span>,{" "}
-        <span className="font-medium">HackYeah</span> and proud staff member of
-        recent
+        <span className="font-medium">HackYeah</span> and from being a proud
+        staff member of recent
         <span className="font-medium">
           {" "}
           <a

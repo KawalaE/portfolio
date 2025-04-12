@@ -49,7 +49,7 @@ const Intro = () => {
             <br />
             <span>
               I&apos;m a passionate frontend developer with commercial
-              experience working with <u>Angular</u> on the med-tech projects.
+              experience working with Angular on the med-tech projects.
             </span>
           </motion.p>
           <motion.div
