@@ -14,7 +14,6 @@ export default function Home() {
       <About />
       <Divider />
       <Experience />
-
       <Divider />
       <Skills />
       <Divider />

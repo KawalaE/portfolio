@@ -10,6 +10,7 @@ import jestIcon from "@/public/jest.png";
 import jsIcon from "@/public/js.png";
 import mswIcon from "@/public/msw-logo.svg";
 import nextIcon from "@/public/nextjs-icon.png";
+import ngRxIcon from "@/public/ngrx-logo.svg";
 import npmIcon from "@/public/npm.png";
 import prettierIcon from "@/public/prettier.svg";
 import prismaIcon from "@/public/prisma.png";
@@ -37,17 +38,18 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
+    name: "Experience",
+    hash: "#experience",
   },
   {
     name: "Skills",
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Projects",
+    hash: "#projects",
   },
+
   {
     name: "Contact",
     hash: "#contact",
@@ -148,6 +150,7 @@ export const projectsData = [
 export const skillsData = [
   { name: "Angular", img: angularIcon },
   { name: "RxJS", img: rxjsIcon },
+  { name: "NgRx", img: ngRxIcon },
   { name: "React", img: reactIcon },
   { name: "Next.js", img: nextIcon },
   { name: "HTML", img: htmlIcon },

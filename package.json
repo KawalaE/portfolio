@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@react-email/components": "^0.0.26",
+    "@react-email/components": "^0.0.41",
     "@react-email/tailwind": "^1.0.0",
     "@types/node": "22.8.1",
     "@types/react": "18.3.12",
@@ -19,7 +19,7 @@
     "eslint": "9.13.0",
     "eslint-config-next": "15.0.1",
     "framer-motion": "^11.11.10",
-    "next": "15.0.1",
+    "next": "^15.3.2",
     "postcss": "8.4.47",
     "react": "18.3.1",
     "react-dom": "18.3.1",
